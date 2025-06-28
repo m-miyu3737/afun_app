@@ -1,0 +1,55 @@
+/* リセットと基本設定 */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* 中央寄せ用ラッパー */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* アニメーション定義 */
+@keyframes fadeInOut {
+  0%   { opacity: 0; transform: scale(0.9); }
+  20%  { opacity: 1; transform: scale(1); }
+  80%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* 共通のロゴスタイル（全画面に適用） */
+.logo {
+  height: auto;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+/* iPhone対応（〜430px） */
+@media screen and (max-width: 431px) {
+  .logo {
+    width: 200px;
+  }
+}
+
+/* iPad対応（431px〜768px） */
+@media screen and (min-width: 431px) and (max-width: 768px) {
+  .logo {
+    width: 500px;
+  }
+}
+
+/* PC・iPad横対応（769px以上） */
+@media screen and (min-width: 769px) {
+  .logo {
+    width: 800px;
+  }
+}

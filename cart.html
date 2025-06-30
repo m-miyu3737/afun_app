@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>afun | オーダー商品一覧</title>
+  <title>オーダー一覧 | afun</title>
   <link rel="stylesheet" href="css/cart.css" />
 </head>
 <body>
   <header class="header">
     <a href="top.html" class="logo-link">
-      <img src="img/logo/logo_yoko.jpg" alt="ロゴ" class="logo" />
+      <img src="img/logo/logo_yoko.jpg" alt="afun ロゴ" class="logo" />
     </a>
     <div class="header-icons">
       <a href="cart.html" class="icon-link">🛒</a>
@@ -17,8 +17,29 @@
     </div>
   </header>
 
-  <main class="cart-area">
-      <h1>オーダー商品一覧の表示</h1>
+  <main class="order-list">
+    <div class="order-item">
+      <img src="img/products_spicecurry/spicecurry-1.jpg" alt="スパイスカレー1" class="product-img" />
+      <h2 class="item-name">スパイシーチキンカレー</h2>
+      <p class="item-price">¥900</p>
+      
+      <div class="quantity-control">
+        <button>-</button>
+        <input type="number" value="1" min="1" max="10" />
+        <button>+</button>
+      </div>
+
+      <label class="memo-label">
+        メモ：<textarea placeholder="ご要望があればご記入ください"></textarea>
+      </label>
+    </div>
+
+    <!-- 他の商品がある場合はこのdivをコピーして追加 -->
+
+    <div class="order-actions">
+      <a href="top.html" class="action-btn">トップへ戻る</a>
+      <a href="customer_info.html" class="action-btn green">お客様情報入力へ</a>
+    </div>
   </main>
 </body>
 </html>

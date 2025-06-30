@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>スパイスカレー一覧 | afun</title>
-  <link rel="stylesheet" href="css/products_spicecurry.css" />
+  <link rel="stylesheet" href="css/products.css" />
 </head>
 <body>
   <header class="header">
@@ -19,27 +19,46 @@
 
   <main class="product-list">
     <div class="product-card">
-      <img src="img/products/curry1.jpg" alt="スパイスカレー1" class="product-img" />
+      <img src="img/products_spicecurry/spicecurry-1.jpg" alt="スパイスカレー1" class="product-img" />
 
       <div class="product-info">
-        <button class="product-name" onclick="showDialog('説明')">スパイシーチキンカレー</button>
-        <p class="product-price">¥900</p>
+        <h2 class="product-name" onclick="showDialog('説明')">コリアンダーチキンカレー</h2>
+        <p class="product-price">1人前：¥900</p>
 
         <label class="quantity-label">
-          数量：
-          <input type="number" min="1" max="10" value="1" class="quantity" />
+          残り：５人前
         </label>
 
         <div class="product-buttons">
-          <button onclick="showDialog('原材料')">原材料</button>
-          <button onclick="showDialog('アレルゲン')">アレルゲン</button>
+          <button onclick="showDialog('原材料')">🌾原材料</button>
+          <button onclick="showDialog('アレルゲン')">🥛アレルゲン</button>
         </div>
-
-        <div class="allergen-icons">🌾 🥛</div>
 
         <button class="order-btn">オーダーする</button>
       </div>
     </div>
+
+    <div class="product-card">
+      <img src="img/products_spicecurry/spicecurry-2.jpg" alt="スパイスカレー1" class="product-img" />
+
+      <div class="product-info">
+        <h2 class="product-name" onclick="showDialog('説明')">スパイスバターチキンカレー</h2>
+        <p class="product-price">1人前：¥1,200</p>
+
+        <label class="quantity-label">
+          残り：7人前
+        </label>
+
+        <div class="product-buttons">
+          <button onclick="showDialog('原材料')">🌾原材料</button>
+          <button onclick="showDialog('アレルゲン')">🥛アレルゲン</button>
+        </div>
+
+        <button class="order-btn">オーダーする</button>
+      </div>
+    </div>
+
+    
 
     <!-- 必要に応じて↓複製して複数商品にしてOK！ -->
   </main>

@@ -1,8 +1,7 @@
-/* リセットと基本設定 */
+/* リセット */
 * {
   box-sizing: border-box;
 }
-
 html, body {
   margin: 0;
   padding: 0;
@@ -15,19 +14,11 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 16px;
-}
-
-/* ロゴ */
-.logo-link {
-  display: inline-block;
-  text-decoration: none;
+  padding: 12px 16px;
 }
 .logo {
-  height: 140px;
+  height: 60px;
 }
-
-/* ヘッダーアイコン */
 .header-icons {
   display: flex;
   align-items: center;
@@ -36,62 +27,93 @@ html, body {
 .menu {
   background: none;
   border: none;
-  font-size: 24px;
-  margin-left: 12px;
+  font-size: 40px;
+  margin-left: 40px;
   cursor: pointer;
   text-decoration: none;
   color: black;
 }
 
-/* カテゴリ画像エリア */
-.category-area {
+/* 商品カード */
+.order-list {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  margin-top: 32px;
+  gap: 32px;
 }
-.category-button {
-  text-align: center;
-  text-decoration: none;
-  color: #000;
+.order-item {
+  background-color: #f8f8f8;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.category-button img {
-  width: 80vw;
-  max-width: 300px;
-  border-radius: 12px;
+.item-name {
+  margin: 0;
+  font-size: 20px;
 }
-.category-button p {
-  margin-top: 8px;
+.item-price {
+  margin: 4px 0 12px;
   font-size: 18px;
 }
-
-/* iPhone対応（〜430px） */
-@media screen and (max-width: 430px) {
-  .logo {
-    height: 80px;
-  }
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.quantity-control input {
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+}
+.quantity-control button {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+}
+.order-item img {
+  width: 30%;
+  border-radius: 8px;
+  margin-bottom: 12px;
 }
 
-/* iPad対応（431px〜768px） */
-@media screen and (min-width: 431px) and (max-width: 768px) {
-  .logo {
-    height: 90px;
-  }
-  .category-button img {
-    width: 60vw;
-    max-width: 350px;
-  }
+/* メモ欄 */
+.memo-label {
+  display: block;
+  font-size: 16px;
+}
+.memo-label textarea {
+  width: 100%;
+  margin-top: 6px;
+  height: 60px;
+  font-size: 14px;
+  padding: 8px;
 }
 
-/* PC・iPad横対応（769px以上） */
-@media screen and (min-width: 769px) {
-  .category-area {
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-  }
-  .category-button img {
-    width: 250px;
+/* アクションボタン */
+.order-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 32px 0;
+}
+.action-btn {
+  text-decoration: none;
+  background-color: #ccc;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.action-btn.green {
+  background-color: #6cc08a;
+  color: white;
+}
+
+/* iPad・PC対応 */
+@media screen and (min-width: 768px) {
+  .order-list {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }

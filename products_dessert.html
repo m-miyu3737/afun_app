@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>afun | デザート一覧</title>
+  <title>スパイスカレー一覧 | afun</title>
   <link rel="stylesheet" href="css/products.css" />
 </head>
 <body>
   <header class="header">
     <a href="top.html" class="logo-link">
-      <img src="img/logo/logo_yoko.jpg" alt="ロゴ" class="logo" />
+      <img src="img/logo/logo_yoko.jpg" alt="afun ロゴ" class="logo" />
     </a>
     <div class="header-icons">
       <a href="cart.html" class="icon-link">🛒</a>
@@ -17,8 +17,41 @@
     </div>
   </header>
 
-  <main class="dessert-area">
-    <h1>デザート一覧の表示</h1>
+  <main class="product-list">
+    <div class="product-card">
+      <img src="img/products_dessert/dessert-1.jpg" alt="デザートー1" class="product-img" />
+
+      <div class="product-info">
+        <h2 class="product-name" onclick="showDialog('説明')">抹茶のバスクチーズケーキ</h2>
+        <p class="product-price">1人前：¥900</p>
+
+        <label class="quantity-label">
+          残り：５人前
+        </label>
+
+        <div class="product-buttons">
+          <button onclick="showDialog('原材料')">🌾原材料</button>
+          <button onclick="showDialog('アレルゲン')">🥛アレルゲン</button>
+        </div>
+
+        <button class="order-btn">オーダーする</button>
+      </div>
+    </div>
+
+    
+
+    <!-- 必要に応じて↓複製して複数商品にしてOK！ -->
   </main>
+
+  <footer class="footer">
+    <a href="top.html" class="footer-btn">トップへ戻る</a>
+    <a href="cart.html" class="footer-btn">カートを見る</a>
+  </footer>
+
+  <script>
+    function showDialog(type) {
+      alert(type + "の情報を表示します（ダイアログ仮）");
+    }
+  </script>
 </body>
 </html>

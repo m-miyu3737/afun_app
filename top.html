@@ -3,14 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>トップページ</title>
+  <title>afun | トップ</title>
   <link rel="stylesheet" href="css/top.css" />
 </head>
 <body>
-  <div class="top">
-    <h2>ようこそ</h2>
-  </div>
+  <header class="header">
+    <a href="top.html" class="logo-link">
+      <img src="img/logo/logo_yoko.jpg" alt="ロゴ" class="logo" />
+    </a>
+    <div class="header-icons">
+      <a href="cart.html" class="icon-link">🛒</a>
+      <button class="menu">≡</button>
+    </div>
+  </header>
 
-  <script src="main.js"></script>
+  <main class="category-area">
+    <a href="products_spicecurry.html" class="category-button">
+      <img src="img/toppicture/top_spicecurry.jpg" alt="スパイスカレー" />
+      <p class="category-text">Spice Curry</p>
+    </a>
+    <a href="products_dessert.html" class="category-button">
+      <img src="img/toppicture/top_dessert.jpg" alt="デザート" />
+      <p class="category-text">Dessert</p>
+    </a>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

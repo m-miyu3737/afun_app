@@ -66,10 +66,6 @@ html, body {
   font-size: 18px;
 }
 
-.category-text{
-  font-family: fantasy;
-}
-
 /* iPhone対応（〜430px） */
 @media screen and (max-width: 430px) {
   .logo {

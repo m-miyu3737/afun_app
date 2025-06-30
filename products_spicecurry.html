@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>スパイスカレー一覧 | afun</title>
+  <link rel="stylesheet" href="css/products_spicecurry.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="top.html" class="logo-link">
+      <img src="img/logo/logo_yoko.jpg" alt="afun ロゴ" class="logo" />
+    </a>
+    <div class="header-icons">
+      <a href="cart.html" class="icon-link">🛒</a>
+      <button class="menu">≡</button>
+    </div>
+  </header>
+
+  <main class="product-list">
+    <div class="product-card">
+      <img src="img/products/curry1.jpg" alt="スパイスカレー1" class="product-img" />
+
+      <div class="product-info">
+        <button class="product-name" onclick="showDialog('説明')">スパイシーチキンカレー</button>
+        <p class="product-price">¥900</p>
+
+        <label class="quantity-label">
+          数量：
+          <input type="number" min="1" max="10" value="1" class="quantity" />
+        </label>
+
+        <div class="product-buttons">
+          <button onclick="showDialog('原材料')">原材料</button>
+          <button onclick="showDialog('アレルゲン')">アレルゲン</button>
+        </div>
+
+        <div class="allergen-icons">🌾 🥛</div>
+
+        <button class="order-btn">オーダーする</button>
+      </div>
+    </div>
+
+    <!-- 必要に応じて↓複製して複数商品にしてOK！ -->
+  </main>
+
+  <footer class="footer">
+    <a href="top.html" class="footer-btn">トップへ戻る</a>
+    <a href="cart.html" class="footer-btn">カートを見る</a>
+  </footer>
+
+  <script>
+    function showDialog(type) {
+      alert(type + "の情報を表示します（ダイアログ仮）");
+    }
+  </script>
+</body>
+</html>

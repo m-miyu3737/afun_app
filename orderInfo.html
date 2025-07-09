@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お客様情報入力 | afun</title>
+  <link rel="stylesheet" href="css/orderInfo.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="top.html" class="logo-link">
+      <img src="img/logo/logo_yoko.jpg" alt="afun ロゴ" class="logo" />
+    </a>
+    <div class="header-icons">
+      <a href="cart.html" class="icon-link">🛒</a>
+      <button class="menu">≡</button>
+    </div>
+  </header>
+
+  <main class="order-container">
+  <section class="order-summary">
+    <h2>注文内容</h2>
+    <div class="order-item">
+      <p>〇〇〇〇カレー　×2</p>
+      <p>¥800</p>
+    </div>
+    <div class="order-item">
+      <p>〇〇〇〇ケーキ　×1</p>
+      <p>¥500</p>
+    </div>
+    <div class="order-total">
+      <p>合計</p>
+      <p>¥1,300</p>
+    </div>
+  </section>
+
+  <section class="customer-info">
+    <h2>お客様情報</h2>
+    <label>氏名</label>
+    <input type="text" placeholder="例：山田 太郎" />
+
+    <label>メールアドレス</label>
+    <input type="email" placeholder="例：sample@example.com" />
+
+    <label>受け取り日時</label>
+    <input type="datetime-local" />
+
+    <label>メモ</label>
+    <textarea rows="3" placeholder="ご要望などがあればご記入ください"></textarea>
+  </section>
+
+  <div class="order-buttons">
+    <a href="cart.html" class="btn">🛒 ひとつ前に戻る</a>
+    <a href="confirm.html" class="btn">✅ 確認画面へ進む</a>
+  </div>
+</main>
+
+</body>
+</html>

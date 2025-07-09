@@ -123,6 +123,61 @@ html, body {
   font-weight: bold;
 }
 
+/* モーダル全体の背景 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* 半透明の黒背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  display: none; /* 初期状態は非表示 */
+}
+
+/* 中央の白いボックス */
+.modal-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+}
+
+/* テキスト */
+.modal-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* 戻るボタン */
+.modal-close {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* iPhone調整（小さい画面用） */
+@media screen and (max-width: 430px) {
+  .modal-content {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .modal-close {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
 /* iPad以上で横並びにする */
 @media screen and (min-width: 768px) {
   .product-list {

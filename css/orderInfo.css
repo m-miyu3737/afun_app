@@ -1,0 +1,111 @@
+/* リセット */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+.logo {
+  height: 140px;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+.icon-link,
+.menu {
+  background: none;
+  border: none;
+  font-size: 40px;
+  margin-left: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.order-container {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 4px;
+}
+
+.order-summary, .customer-info {
+  background-color: #f9f9f9;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.order-item, .order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.order-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #9acd32;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #86b92e;
+}
+
+
+
+/* iPad・PC対応 */
+@media screen and (min-width: 768px) {
+  .order-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

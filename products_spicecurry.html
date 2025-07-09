@@ -22,7 +22,7 @@
       <img src="img/products_spicecurry/spicecurry-1.jpg" alt="スパイスカレー1" class="product-img" />
 
       <div class="product-info">
-        <h2 class="product-name" onclick="showDialog('説明')">コリアンダーチキンカレー</h2>
+        <h2 class="product-name">コリアンダーチキンカレー</h2>
         <p class="product-price">1人前：¥900</p>
 
         <label class="quantity-label">
@@ -30,8 +30,9 @@
         </label>
 
         <div class="product-buttons">
-          <button onclick="showDialog('原材料')">🌾原材料</button>
-          <button onclick="showDialog('アレルゲン')">🥛アレルゲン</button>
+          <button onclick="openModal('商品説明')">🍛商品説明</button>
+          <button onclick="openModal('原材料')">🌾原材料</button>
+          <button onclick="openModal('アレルゲン')">🥛アレルゲン</button>
         </div>
 
         <button class="order-btn">オーダーする</button>
@@ -42,7 +43,7 @@
       <img src="img/products_spicecurry/spicecurry-2.jpg" alt="スパイスカレー1" class="product-img" />
 
       <div class="product-info">
-        <h2 class="product-name" onclick="showDialog('説明')">スパイスバターチキンカレー</h2>
+        <h2 class="product-name">スパイスバターチキンカレー</h2>
         <p class="product-price">1人前：¥1,200</p>
 
         <label class="quantity-label">
@@ -50,8 +51,9 @@
         </label>
 
         <div class="product-buttons">
-          <button onclick="showDialog('原材料')">🌾原材料</button>
-          <button onclick="showDialog('アレルゲン')">🥛アレルゲン</button>
+          <button onclick="openModal('商品説明')">🍛商品説明</button>
+          <button onclick="openModal('原材料')">🌾原材料</button>
+          <button onclick="openModal('アレルゲン')">🥛アレルゲン</button>
         </div>
 
         <button class="order-btn">オーダーする</button>
@@ -68,10 +70,17 @@
     <a href="cart.html" class="footer-btn">カートを見る</a>
   </footer>
 
-  <script>
-    function showDialog(type) {
-      alert(type + "の情報を表示します（ダイアログ仮）");
-    }
-  </script>
+   <!-- モーダルUI -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <p class="modal-text" id="modalText">
+        <!-- ここにJavaScriptでテキストを入れる -->
+      </p>
+      <button class="modal-close" onclick="closeModal()">戻る</button>
+    </div>
+  </div>
+
+  <script src="js/products.js"></script>
+
 </body>
 </html>

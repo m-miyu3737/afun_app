@@ -1,0 +1,138 @@
+/* 基本スタイル */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+.logo {
+  height: 140px;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+.icon-link,
+.menu {
+  background: none;
+  border: none;
+  font-size: 40px;
+  margin-left: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+/* コンテナ */
+.confirm-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-left: 6px solid #aaa;
+  padding-left: 10px;
+}
+
+/* 注文内容と顧客情報 */
+.order-summary,
+.customer-info {
+  background-color: #ffecec;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.order-item,
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+/* ボタン */
+.order-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  background-color: #ccc;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+}
+.btn.primary {
+  background-color: #78d478;
+  color: #fff;
+}
+
+/* モーダル */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+}
+.modal-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.modal-close, .modal-confirm {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.modal-close {
+  background-color: #aaa;
+  color: #fff;
+}
+.modal-confirm {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* 小画面対応 */
+@media screen and (max-width: 430px) {
+  .modal-content {
+    width: 90%;
+    font-size: 14px;
+  }
+  .modal-close, .modal-confirm {
+    width: 45%;
+    font-size: 14px;
+  }
+}

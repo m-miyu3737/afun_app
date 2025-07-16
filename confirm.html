@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お客様情報最終確認 | afun</title>
+  <link rel="stylesheet" href="css/confirm.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="img/logo/logo_yoko.jpg" alt="afun ロゴ" class="logo" />
+    <div class="header-icons">
+      <a href="cart.html" class="icon-link">🛒</a>
+      <button class="menu">≡</button>
+    </div>
+  </header>
+
+  <main class="confirm-container">
+    <section class="order-summary">
+      <h2>注文内容</h2>
+      <div class="order-item">
+        <p>〇〇〇〇カレー　×2</p>
+        <p>¥800</p>
+      </div>
+      <div class="order-item">
+        <p>〇〇〇〇ケーキ　×2</p>
+        <p>¥500</p>
+      </div>
+      <div class="order-total">
+        <p>合計</p>
+        <p>¥1,300</p>
+      </div>
+    </section>
+
+    <section class="customer-info">
+      <h2>お客様情報</h2>
+      <p><strong>お名前：</strong>山田 太郎</p>
+      <p><strong>メールアドレス：</strong>sample@example.com</p>
+      <p><strong>受け取り日時：</strong>2025-07-20 13:00</p>
+      <p><strong>メモ：</strong>辛さ控えめでお願いします</p>
+    </section>
+
+    <div class="order-buttons">
+      <a href="orderInfo.html" class="btn">ひとつ前に戻る</a>
+      <button class="btn primary" onclick="openModal()">オーダーする</button>
+    </div>
+  </main>
+
+  <!-- モーダルUI -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <p class="modal-text" id="modalText">
+        この内容でご注文を確定してもよろしいですか？
+      </p>
+      <div class="modal-buttons">
+        <button class="modal-close" onclick="closeModal()">戻る</button>
+        <button class="modal-confirm" onclick="submitOrder()">注文確定</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/confirm.js"></script>
+</body>
+</html>
